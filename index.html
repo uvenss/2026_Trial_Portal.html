@@ -12,7 +12,8 @@
         :root {
             --dark-bg: #090915; /* خلفية أعمق */
             --neon-blue: #00ffff; /* أزرق سماوي نقي */
-            --accent-color: #ff007f; /* وردي فاقع جذاب */
+            --accent-color: #ff007f; /* وردي فاقع جذاب (للانستغرام) */
+            --tiktok-color: #00f2f2; /* لون خاص للتيك توك (سماوي فاتح) */
             --text-light: #e6e6fa; /* لون نص فاتح */
             --font-main: 'Cairo', sans-serif;
             --font-title: 'Orbitron', sans-serif;
@@ -47,7 +48,7 @@
             font-family: var(--font-title);
             font-size: 1.6rem;
             color: var(--neon-blue);
-            text-shadow: 0 0 8px rgba(0, 255, 255, 0.8); /* ظل أقوى للوجو */
+            text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
         }
         
         /* روابط شريط التنقل */
@@ -75,8 +76,25 @@
             font-weight: bold;
             box-shadow: 0 0 15px rgba(255, 0, 127, var(--shadow-intensity));
             transition: transform 0.2s, opacity 0.2s;
+            margin-right: 15px; /* مسافة بين الأزرار */
         }
         .instagram-btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+        
+        /* زر تيك توك الجديد */
+        .tiktok-btn {
+            background-color: var(--tiktok-color); 
+            color: var(--dark-bg) !important;
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 0 15px rgba(0, 242, 242, var(--shadow-intensity));
+            transition: transform 0.2s, opacity 0.2s;
+        }
+        .tiktok-btn:hover {
             transform: translateY(-2px);
             opacity: 0.9;
         }
@@ -114,7 +132,7 @@
             margin-bottom: 60px;
             border: 2px solid var(--accent-color);
             border-radius: 15px;
-            box-shadow: 0 0 50px rgba(255, 0, 127, 0.6); /* ظل أقوى وأوضح */
+            box-shadow: 0 0 50px rgba(255, 0, 127, 0.6);
             animation: neon-pulse 1.8s infinite alternate;
             max-width: 900px;
             width: 90%;
@@ -123,7 +141,7 @@
         .hero h1 {
             font-family: var(--font-title);
             font-size: 3.8rem;
-            color: var(--neon-blue); /* تغيير لون العنوان الرئيسي للأزرق */
+            color: var(--neon-blue);
             margin-bottom: 15px;
             text-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
         }
@@ -191,7 +209,10 @@
             <a href="#">التكنولوجيا</a>
             <a href="#">التفاعل</a>
             <a href="https://www.instagram.com/younesss_111_?igsh=ZXpndWtkYnYxc3Jo" class="instagram-btn" target="_blank">
-                حسابي على انستغرام
+                انستغرام
+            </a>
+            <a href="https://www.tiktok.com/@younesss_111_?_t=ZS-90gTF0fBeb6&_r=1" class="tiktok-btn" target="_blank">
+                تيك توك
             </a>
         </nav>
     </header>
